@@ -10,7 +10,28 @@
 
   </head>
   <body style="overflow:hidden;">
-    <center><img src="logo.svg" alt="" style="height:100vh;" class="animate__animated animate__jackInTheBox"></center>
+    <center><img src="logo.svg" alt="" style="height:100vh;" class="animate__animated animate__jackInTheBox" id="splash"></center>
     <a href="https://opticalraze.com" style="position:absolute;bottom:10px;left:10px;" class="text-dark">Optical Raze</a>
+
+
+
+
+
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript">
+    $( document ).ready(function() {
+
+      // make splash picture adjust for mobile devices
+      var windowWidth = $(window).width();
+      var windowHeight = $(window).height();
+      if (windowWidth < windowHeight) {
+        $('#splash').css("height", "");
+        $('#splash').css("width", "100vw");
+      }
+
+    });
+    </script>
   </body>
 </html>
