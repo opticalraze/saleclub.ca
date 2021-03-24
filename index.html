@@ -151,11 +151,11 @@
         //data = JSON.parse(d);
         //data = JSON.parse(data);
 
-
-        try {
+        // make json parse work on ghpages
+        try { // localhost
             data = JSON.parse(d);
         }
-        catch(err) {
+        catch(err) { // ghpages
             data = JSON.stringify(d);
             data = JSON.parse(data);
         }

@@ -22,25 +22,25 @@
   "tech":[
     {
        "brand":"Staples",
-       "link":"#",
+       "link":"https://amazon.ca",
        "picture":"https://images-na.ssl-images-amazon.com/images/I/514bNGOGLYL._AC_SL1001_.jpg",
        "pixel":""
     },
     {
        "brand":"SportCheck",
-       "link":"#",
+       "link":"https://amazon.ca",
        "picture":"https://images-na.ssl-images-amazon.com/images/I/61Bboa37QUL._AC_SL1024_.jpg",
        "pixel":""
     },
     {
        "brand":"BestBuy",
-       "link":"#",
+       "link":"https://amazon.ca",
        "picture":"https://images-na.ssl-images-amazon.com/images/I/51is6bX7nFL._AC_SL1000_.jpg",
        "pixel":""
     },
     {
        "brand":"Amazon",
-       "link":"#",
+       "link":"https://amazon.ca",
        "picture":"https://images-na.ssl-images-amazon.com/images/I/616jD4KT5tL._AC_SL1500_.jpg",
        "pixel":""
     }
