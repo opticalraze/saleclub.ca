@@ -29,7 +29,7 @@ $(document).ready(function() {
         if ($(".splash").length > 0)
         {
           waitForElementToDisplay("#splash.done",function(){
-            console.log('u');
+            //console.log('u');
             $(".splash").fadeOut("slow");
             $('body').css('overflow','auto');
           },200,10000);
