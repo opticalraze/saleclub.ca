@@ -1,4 +1,50 @@
 
+
+.navbar .logo {
+  position:absolute;
+  right:calc((100vw / 2) - 26px);
+  margin-right:0px;
+}
+
+.navbar .logo img {
+  height:52px;
+  margin-top:-15px;
+  margin-bottom:-10px;
+}
+
+
+.footer {
+
+  height:100px;
+  padding:20px;
+  position:relative;
+
+}
+
+.footer .contact-link {
+  position:absolute;
+  right:20px;
+  top:20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* scrollbar */
 /* width */
 ::-webkit-scrollbar {
