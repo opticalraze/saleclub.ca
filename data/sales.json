@@ -1,0 +1,48 @@
+{
+  "dod":[
+    {
+       "brand":"Diamond CBD",
+       "link":"https://www.diamondcbd.com/",
+       "picture":"https://static.shareasale.com/image/94813/Banner---Delta-8-Vape-Tank-and-Pens.jpg",
+       "pixel":""
+    },
+    {
+       "brand":"Diamond CBD",
+       "link":"https://www.diamondcbd.com/",
+       "picture":"https://static.shareasale.com/image/94813/Banner---liquid-gold-vape-liquid.jpg",
+       "pixel":""
+    },
+    {
+       "brand":"Diamond CBD",
+       "link":"https://www.diamondcbd.com/",
+       "picture":"https://static.shareasale.com/image/94813/Banner---YY-Plus--FS-relax-squares.jpg",
+       "pixel":""
+    }
+  ],
+  "tech":[
+    {
+       "brand":"Staples",
+       "link":"https://amazon.ca",
+       "picture":"https://images-na.ssl-images-amazon.com/images/I/514bNGOGLYL._AC_SL1001_.jpg",
+       "pixel":""
+    },
+    {
+       "brand":"SportCheck",
+       "link":"https://amazon.ca",
+       "picture":"https://images-na.ssl-images-amazon.com/images/I/61Bboa37QUL._AC_SL1024_.jpg",
+       "pixel":""
+    },
+    {
+       "brand":"BestBuy",
+       "link":"https://amazon.ca",
+       "picture":"https://images-na.ssl-images-amazon.com/images/I/51is6bX7nFL._AC_SL1000_.jpg",
+       "pixel":""
+    },
+    {
+       "brand":"Amazon",
+       "link":"https://amazon.ca",
+       "picture":"https://images-na.ssl-images-amazon.com/images/I/616jD4KT5tL._AC_SL1500_.jpg",
+       "pixel":""
+    }
+  ]
+}
