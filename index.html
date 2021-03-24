@@ -144,8 +144,6 @@
       var data;
       var nocache = '?nocache='+Date.now();
 
-      //console.log(date);
-
       $.get('https:/saleclub.ca/data/20210323.json'+nocache, function(d) {
         data = JSON.parse(d);
         // loop through all books
