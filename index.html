@@ -137,11 +137,11 @@
     <script type="text/javascript">
       // global variable
       var data;
-      var date = Date.now();
+      var nocache = '?nocache='+Date.now();
 
       //console.log(date);
 
-      $.get('data/20210323.json?nocache='+date, function(d) {
+      $.get('data/20210323.json', function(d) {
         data = JSON.parse(d);
         // loop through all books
 
