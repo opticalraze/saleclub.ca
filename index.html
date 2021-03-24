@@ -145,7 +145,22 @@
       var nocache = '?nocache='+Date.now();
 
       $.get('data/20210323.json'+nocache, function(d) {
-        data = JSON.parse(d);
+        //data = JSON.parse(d); works on localhost
+
+        //data = JSON.stringify(d);
+        //data = JSON.parse(d);
+        //data = JSON.parse(data);
+
+
+        try {
+            data = JSON.parse(d);
+        }
+        catch(err) {
+            data = JSON.stringify(d);
+            data = JSON.parse(data);
+        }
+
+
         // loop through all books
 
         //console.log(data);
