@@ -147,10 +147,6 @@
       $.get('data/20210323.json'+nocache, function(d) {
         //data = JSON.parse(d); works on localhost
 
-        //data = JSON.stringify(d);
-        //data = JSON.parse(d);
-        //data = JSON.parse(data);
-
         // make json parse work on ghpages
         try { // localhost
             data = JSON.parse(d);
@@ -159,9 +155,6 @@
             data = JSON.stringify(d);
             data = JSON.parse(data);
         }
-
-
-        // loop through all books
 
         //console.log(data);
 
