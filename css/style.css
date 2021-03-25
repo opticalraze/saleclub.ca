@@ -1,4 +1,61 @@
 
+img.wide {
+  width: 100%;
+  height: auto;
+}
+
+img.tall {
+  height: 100%;
+  width: auto;
+}
+
+.grow {
+  transition: all .2s ease-in-out;
+}
+.grow:hover {
+  transform: scale(1.1);
+  z-index: 10;
+}
+
+.card.sale {
+  width:18rem;
+  display:inline-block;
+  margin:10px 15px 15px 15px;
+}
+
+.card.sale a {
+  text-decoration:none;
+}
+
+.card.sale .card-img-top {
+  width:286px;
+  height:286px;
+  display:flex;
+  justify-content:center;
+}
+
+.card.sale .card-img-top img {
+  padding:10px;
+  margin:auto;
+  display:block;
+}
+
+.card.sale .card-body {
+  height:112px;
+}
+
+.card.sale .brand-logo {
+  height: 20px;
+  margin-bottom: 8px;
+}
+
+
+
+
+
+
+
+
 
 .navbar .logo {
   position:absolute;

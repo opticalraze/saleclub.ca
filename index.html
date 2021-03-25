@@ -56,7 +56,6 @@
         <div class="navbar-nav">
           <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link" href="#">Features</a>
-          <a class="nav-item nav-link" href="#">Pricing</a>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Categories
@@ -67,7 +66,8 @@
               <a class="dropdown-item" href="#">Something else here</a>
             </div>
           </li>
-          <a class="nav-item nav-link disabled" href="#">Disabled</a>
+          <a class="nav-item nav-link" href="#" id="open-about">About</a>
+          <a class="nav-item nav-link disabled" href="#">Newsletter</a>
         </div>
       </div>
     </nav>
@@ -78,10 +78,8 @@
       <h1>Deals of the Day</h1>
       <hr>
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <ol class="carousel-indicators" id="dodIndicators">
+
         </ol>
         <div class="carousel-inner" id="dod">
 
@@ -95,12 +93,21 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-      <br>
-      <br>
-      <br>
+      <br><br><br>
 
-      <h1>Tech Deals</h1>
+      <h1 style="display:inline-block;">Categories</h1>
+      <select class="form-control" aria-label=".form-select-lg example" style="display:inline-block;vertical-align:super;width:auto;margin-left:10px;">
+        <option selected>Open this select menu</option>
+        <option value="1">Tech</option>
+        <option value="2">Sports</option>
+        <option value="3">Finance</option>
+      </select>
       <hr>
+      <div class="text-center" id="categories">
+
+      </div>
+
+      <h3 style="margin-bottom:12px;">Tech Deals</h3>
       <div class="text-center" id="tech">
 
       </div>
@@ -115,6 +122,22 @@
       <p>Note: this site uses affiliate marketing to pay the bills, <a href="notice.html" class="text-white"><b>Click Here</b></a> for more info.</p>
       <a href="contact.html" class="text-white contact-link"><b>Contact</b></a>
     </div>
+
+    <div class="popup" id="about-popup" style="display:none;">
+      <h1>About</h1>
+      <p>We know you work hard for you money, Saving it shouldn't be. Find the best deals today at saleclub.ca</p>
+    </div>
+
+    <div class="popup" id="contact-popup" style="display:none;">
+      <h1>Contact</h1>
+      <p>If you need to contact us you can send us an email at <a href="#">contact@saleclub.ca</a></p>
+    </div>
+
+    <div class="popup" id="notice-popup" style="display:none;">
+      <h1>Notice</h1>
+      <p>saleclub.ca uses affiliate programs to earn revenue when you click on deals from our page.</p>
+    </div>
+
 
 
 
