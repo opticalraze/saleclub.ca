@@ -41,20 +41,7 @@
 
 
 
-      /* popups */
-      .popup {
-        position: fixed; /* Sit on top of the page content */
-        display: none; /* Hidden by default */
-        width: 100%; /* Full width (cover the whole page) */
-        height: 100%; /* Full height (cover the whole page) */
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(0,0,0,0.5); /* Black background with opacity */
-        z-index: 100; /* Specify a stack order in case you're using a different order for other elements */
-        text-align: center;
-      }
+
 
 
 
@@ -145,67 +132,54 @@
     </div>
 
 
-    <div id="about-popup" class="popup" style="background-color:rgba(0,0,0,0.75);">
-        <div class="card" style="width: 80%;height:95%;margin-right:auto;margin-left:auto;margin-top:10px;position: relative;overflow:hidden">
+    <div id="about-popup" class="popup">
+        <div class="card">
             <div class="card-body">
-                <h3 class="text-center" style="margin-bottom: 30px">About</h3>
-                <hr style="margin-bottom:0px;">
-                <div class="text-left">
-
-                <div style="overflow-y: scroll;padding-right:10px; height: calc(100vh - 24px - 40px - 80px);">
-
-                  <p>We know you work hard for you money, Saving it shouldn't be. Find the best deals today at saleclub.ca</p>
-
-                </div>
-
-                </div>
+              <div class="head">
+                <h3>About</h3>
+                <hr>
+              </div>
+              <div class="body">
+                <p>We know you work hard for you money, Saving it shouldn't be. Find the best deals today at saleclub.ca</p>
+              </div>
             </div>
         </div>
         <span>
-            <button id="close-about-popup" type="button" class="btn btn-light" style="position: fixed;display: block;right: 10px;top:10px;"><i class="fas fa-times"></i></button>
+            <button id="close-about-popup" type="button" class="btn btn-light popup-close"><i class="fas fa-times"></i></button>
         </span>
     </div>
 
-    <div id="notice-popup" class="popup" style="background-color:rgba(0,0,0,0.75);">
-        <div class="card" style="width: 80%;height:95%;margin-right:auto;margin-left:auto;margin-top:10px;position: relative;overflow:hidden">
+    <div id="notice-popup" class="popup">
+        <div class="card">
             <div class="card-body">
-                <h3 class="text-center" style="margin-bottom: 30px">Notice</h3>
-                <hr style="margin-bottom:0px;">
-                <div class="text-left">
-
-                <div style="overflow-y: scroll;padding-right:10px; height: calc(100vh - 24px - 40px - 80px);">
-
+                <div class="head">
+                  <h3>Notice</h3>
+                  <hr>
+                </div>
+                <div class="body">
                   <p>saleclub.ca uses affiliate programs to earn revenue when you click on deals from our page.</p>
-
-                </div>
-
                 </div>
             </div>
         </div>
         <span>
-            <button id="close-notice-popup" type="button" class="btn btn-light" style="position: fixed;display: block;right: 10px;top:10px;"><i class="fas fa-times"></i></button>
+            <button id="close-notice-popup" type="button" class="btn btn-light popup-close"><i class="fas fa-times"></i></button>
         </span>
     </div>
 
-
-    <div id="contact-popup" class="popup" style="background-color:rgba(0,0,0,0.75);">
-        <div class="card" style="width: 80%;height:95%;margin-right:auto;margin-left:auto;margin-top:10px;position: relative;overflow:hidden">
+    <div id="contact-popup" class="popup">
+        <div class="card">
             <div class="card-body">
-                <h3 class="text-center" style="margin-bottom: 30px">Contact</h3>
-                <hr style="margin-bottom:0px;">
-                <div class="text-left">
-
-                  <div style="overflow-y: scroll;padding-right:10px; height: calc(100vh - 24px - 40px - 80px);">
-
-                    <p>If you would like to contact us, you can send us an email at: <a href="mailto:contact@saleclub.ca">contact@saleclub.ca</a></p>
-
-                  </div>
-
+              <div class="head">
+                <h3>Contact</h3>
+                <hr>
+              </div>
+                <div class="body">
+                  <p>If you would like to contact us, you can send us an email at: <a href="mailto:contact@saleclub.ca">contact@saleclub.ca</a></p>
                 </div>
             </div>
         </div>
         <span>
-            <button id="close-contact-popup" type="button" class="btn btn-light" style="position: fixed;display: block;right: 10px;top:10px;"><i class="fas fa-times"></i></button>
+            <button id="close-contact-popup" type="button" class="btn btn-light popup-close"><i class="fas fa-times"></i></button>
         </span>
     </div>
 
