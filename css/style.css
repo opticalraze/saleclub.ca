@@ -1,4 +1,32 @@
 
+#categories {
+  text-align: left;
+  padding-top: 20px;
+}
+
+#categories h1 {
+  display:inline-block;
+}
+
+#categories select {
+  display:inline-block;
+  vertical-align:super;
+  width:auto;
+  margin-left:10px;
+}
+
+#categories h3 {
+  margin-bottom:12px;
+}
+
+
+.content {
+  min-height:100vh;
+  padding:30px;
+  background-color:white;
+}
+
+
 
 /* popups */
 .popup {
