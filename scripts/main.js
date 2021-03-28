@@ -36,9 +36,16 @@ $(document).ready(function() {
     });
 
     //firstLoop = true;
-    /*data.categories.forEach(function(a) {
+    /*data.categories.forEach(function(c) {
 
-        $("#tech").append(`<div style="display:inline-block;margin:10px;"><a href="${a.link}" target="_blank"><img width="350" src="${a.picture}" alt="${a.brand}"></a></div>`);
+        c.forEach(function(a) {
+
+            console.log(a.brand);
+
+            //$("#tech").append(`<div style="display:inline-block;margin:10px;"><a href="${a.link}" target="_blank"><img width="350" src="${a.picture}" alt="${a.brand}"></a></div>`);
+        });
+
+        //$("#tech").append(`<div style="display:inline-block;margin:10px;"><a href="${a.link}" target="_blank"><img width="350" src="${a.picture}" alt="${a.brand}"></a></div>`);
     });*/
 
     data.tech.forEach(function(a) {
