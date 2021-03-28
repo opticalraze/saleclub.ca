@@ -1,4 +1,43 @@
 
+
+/* important styles */
+.capitalize {
+  text-transform: capitalize;
+}
+
+.hidden {
+  display: none;
+}
+
+
+/* cookies banner */
+.cookies-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  padding: 20px;
+  z-index: 10;
+}
+
+.cookies-banner p {
+  font-weight: 300;
+}
+
+.cookies-banner b {
+  font-weight: 500;
+}
+
+.cookies-banner a {
+  margin-right: 20px;
+}
+
+
+
+
+
+
+
 #categories {
   text-align: left;
   padding-top: 20px;

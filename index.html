@@ -37,14 +37,6 @@
       }
 
 
-
-
-
-
-
-
-
-
     </style>
 
   </head>
@@ -70,10 +62,8 @@
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Categories
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#categories" id="category-tech">Tech</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="categories-dropdown">
+
             </div>
           </li>
           <a class="nav-item nav-link" href="#" id="show-about-popup">About</a>
@@ -107,15 +97,12 @@
 
       <div class="text-left" id="categories">
         <h1>Categories</h1>
-        <select class="form-control" aria-label=".form-select-lg example">
-          <option selected>Open this select menu</option>
-          <option value="1">Tech</option>
-          <option value="2">Sports</option>
-          <option value="3">Finance</option>
+        <select class="form-control capitalize" aria-label=".form-select-lg example">
+
         </select>
         <hr>
-        <h3>Tech Deals</h3>
-        <div class="text-center" id="tech">
+        <h3 class="capitalize">Deals</h3>
+        <div class="text-center" id="category">
 
         </div>
       </div>
@@ -185,8 +172,18 @@
 
 
 
-    <div class="popup" id="affiliates-popup" style="display:none;">
+    <div class="popup hidden" id="affiliates-popup">
       <h1>Affiliates</h1>
+    </div>
+
+
+    <!-- Cookies Popup -->
+    <div class="cookies-banner bg-light hidden" id="cookies-banner">
+      <h5 class="title text-dark">This site has a cookie</h4>
+      <p class="info text-dark">Do you want <b>your web browser</b> to<br>remember your last viewed category?</p>
+      <!--<p class="info text-dark">Do you want to let <b>your web browser</b><br>remember your last viewed category?</p>-->
+      <a href="#" class="text-danger" id="cookies-disable">no thanks</a>
+      <button type="button" name="button" class="btn btn-dark" id="cookies-allow">Sure</button>
     </div>
 
 

@@ -4,7 +4,13 @@ $(document).ready(function() {
 
   // global variable
   var data;
-  var nocache = '?nocache='+Date.now();
+  const nocache = '?nocache='+Date.now();
+  //let arrayRow; // not sure if let is better
+  var arrayRow;
+  var categories;
+  var category = Cookies.get('category');
+  var cookies = Cookies.get('cookies');
+  if (cookies == 'no') cookies = false;
 
   $.get('data/sales.json'+nocache, function(d) {
     //data = JSON.parse(d); works on localhost
@@ -19,9 +25,9 @@ $(document).ready(function() {
     }
 
     //console.log(data);
+    categories = data.categories;
 
-    //var firstLoop = true;
-    var arrayRow = 0;
+    arrayRow = 0;
     data.dod.forEach(function(a) {
       //if (firstLoop) {
       if (arrayRow == 0) {
@@ -35,27 +41,75 @@ $(document).ready(function() {
       }
     });
 
-    //firstLoop = true;
-    /*data.categories.forEach(function(c) {
+    arrayRow = 0;
+    for (const [key, value] of Object.entries(categories)) {
 
-        c.forEach(function(a) {
+      if (!category && arrayRow == 0) { // if user last category cookie not found set category to first
+        category = key; // still need to check if category still exists in case if it would disapear but may just add a no sales available notice
+      }
 
-            console.log(a.brand);
+      $("#categories-dropdown").append(`<a class="dropdown-item capitalize change-category" href="#categories" data-value="${key}">${key}</a>`);
+      if (category == key){
 
-            //$("#tech").append(`<div style="display:inline-block;margin:10px;"><a href="${a.link}" target="_blank"><img width="350" src="${a.picture}" alt="${a.brand}"></a></div>`);
+        $("#categories select").append(`<option selected value="${key}">${key}</option>`);
+        $("#categories h3").html(key + " Deals");
+
+        value.forEach(function(a) {
+
+          const brandLogo = a.brand.toLowerCase().replace(/\s+/g, '');
+
+          // possibly need to check here for specific category types to make ads look different depending on what they are
+
+          $("#category").append(`<div class="card grow sale"><a class="text-dark" href="${a.link}" target="_blank"><div class="card-img-top"><img class="wide" src="${a.picture}" alt="${a.brand}"></div><div class="card-body"><p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p></div><img class="brand-logo" src="assets/affiliates/${brandLogo}.svg"></a></div>`);
+
         });
 
-        //$("#tech").append(`<div style="display:inline-block;margin:10px;"><a href="${a.link}" target="_blank"><img width="350" src="${a.picture}" alt="${a.brand}"></a></div>`);
-    });*/
+      } else {
+        $("#categories select").append(`<option value="${key}">${key}</option>`);
+      }
 
-    data.tech.forEach(function(a) {
+      arrayRow++;
 
-      var brandLogo = a.brand.toLowerCase().replace(/\s+/g, '');
+    }
 
-      $("#tech").append(`<div class="card grow sale"><a class="text-dark" href="${a.link}" target="_blank"><div class="card-img-top"><img class="wide" src="${a.picture}" alt="${a.brand}"></div><div class="card-body"><p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p></div><img class="brand-logo" src="assets/affiliates/${brandLogo}.svg"></a></div>`);
 
+
+  });
+
+
+  /* handle category change */
+
+  $("#categories select").change(function() {
+    category = $(this).val(); // set category
+    if (cookies) Cookies.set('category', category, { expires: 30 }); // set category cookie
+    $("#categories h3").html(category + " Deals");
+    $("#category").empty(); // empty div
+    categories[category].forEach(function(a) {  // fill div with new category's items
+      const brandLogo = a.brand.toLowerCase().replace(/\s+/g, '');
+
+      // possibly need to check here for specific category types to make ads look different depending on what they are
+
+      $("#category").append(`<div class="card grow sale"><a class="text-dark" href="${a.link}" target="_blank"><div class="card-img-top"><img class="wide" src="${a.picture}" alt="${a.brand}"></div><div class="card-body"><p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p></div><img class="brand-logo" src="assets/affiliates/${brandLogo}.svg"></a></div>`);
     });
   });
+
+  $(document).on('click', '.change-category', function(){
+    category = $(this).data("value");
+    if (cookies) Cookies.set('category', category, { expires: 30 }); // set category cookie
+    $("#categories select").val(category);  // change category in the selection
+    $("#categories h3").html(category + " Deals");
+    $("#category").empty(); // empty div
+    categories[category].forEach(function(a) {  // fill div with new category's items
+      const brandLogo = a.brand.toLowerCase().replace(/\s+/g, '');
+
+      // possibly need to check here for specific category types to make ads look different depending on what they are
+
+      $("#category").append(`<div class="card grow sale"><a class="text-dark" href="${a.link}" target="_blank"><div class="card-img-top"><img class="wide" src="${a.picture}" alt="${a.brand}"></div><div class="card-body"><p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p></div><img class="brand-logo" src="assets/affiliates/${brandLogo}.svg"></a></div>`);
+    });
+  });
+
+
+  /*---------------------------*/
 
 
 
@@ -73,7 +127,6 @@ $(document).ready(function() {
         $('body').addClass('bg-danger').removeClass('bg-light');
       }
     });
-
     $("#show-about-popup").on("click", function() {
       $("#about-popup").show();
 
@@ -102,7 +155,6 @@ $(document).ready(function() {
           $('body').addClass('bg-danger').removeClass('bg-light');
         }
       });
-
       $("#show-notice-popup").on("click", function() {
         $("#notice-popup").show();
 
@@ -132,7 +184,6 @@ $(document).ready(function() {
             $('body').addClass('bg-danger').removeClass('bg-light');
           }
         });
-
         $("#show-contact-popup").on("click", function() {
           $("#contact-popup").show();
 
@@ -150,6 +201,22 @@ $(document).ready(function() {
 
 
 
+        /* handle cookies popup */
+        if (cookies == undefined) {
+          $("#cookies-banner").removeClass("hidden");         // hide cookies banner
+        }
+
+        $("#cookies-allow").click(function() {
+          Cookies.set('cookies','allow',{expires:365*10});    // set cookies cookie to enable
+          cookies = true;                                     // enable cookies variable
+          $("#cookies-banner").addClass("hidden");            // hide cookies banner
+        });
+
+        $("#cookies-disable").click(function() {
+          Cookies.set('cookies','no',{expires:365*10});    // set cookies cookie to disable
+          cookies = false;                                 // disable cookies variable
+          $("#cookies-banner").addClass("hidden");         // hide cookies banner
+        });
 
 });
 
