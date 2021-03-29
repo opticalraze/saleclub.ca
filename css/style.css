@@ -1,3 +1,47 @@
+.label {
+    position: absolute;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 0;
+}
+
+.label.savings{
+    top: 0;
+    right: 0;
+}
+
+.label.price{
+    top: 261px;
+    left: 0;
+}
+
+.label.price .regular{
+    text-decoration: line-through;
+    margin-right: 10px;
+}
+
+.label.price .regular:empty{
+    margin:0;
+}
+
+.label.expire {
+    top: 261px;
+    right: 0;
+}
+
+
+
+
+
+
+
+
+
+.no-sales {
+  margin-top: 40px;
+}
+
+
 
 
 /* important styles */
@@ -141,7 +185,7 @@ img.tall {
 }
 .grow:hover {
   transform: scale(1.1);
-  z-index: 10;
+  z-index: 5;
 }
 
 .card.sale {
@@ -159,6 +203,7 @@ img.tall {
   height:286px;
   display:flex;
   justify-content:center;
+  border-bottom: 1px solid rgba(0,0,0,.125); /* might not use this */
 }
 
 .card.sale .card-img-top img {
@@ -169,10 +214,13 @@ img.tall {
 
 .card.sale .card-body {
   height:112px;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(0,0,0,.125); /* might not use this */
 }
 
 .card.sale .brand-logo {
   height: 20px;
+  margin-top: 8px;
   margin-bottom: 8px;
 }
 

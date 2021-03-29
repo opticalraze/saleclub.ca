@@ -4,13 +4,20 @@ $(document).ready(function() {
 
   // global variable
   var data;
-  const nocache = '?nocache='+Date.now();
+  const date = Math.floor(Date.now() / 1000); // current timestamp in seconds (is this UTC?)
+  const nocache = '?nocache='+date;
   //let arrayRow; // not sure if let is better
   var arrayRow;
   var categories;
   var category = Cookies.get('category');
   var cookies = Cookies.get('cookies');
   if (cookies == 'no') cookies = false;
+
+
+//console.log(date + 4*3600);
+
+//console.log(date);
+//console.log(Math.floor((new Date()).getTime() / 1000));
 
   $.get('data/sales.json'+nocache, function(d) {
     //data = JSON.parse(d); works on localhost
@@ -54,15 +61,29 @@ $(document).ready(function() {
         $("#categories select").append(`<option selected value="${key}">${key}</option>`);
         $("#categories h3").html(key + " Deals");
 
-        value.forEach(function(a) {
+        if(value.length){
+          value.forEach(function(a) {
+            if(a.expires == "" || a.expires>date){    // check if sale is expired
+              const brandLogo = a.brand.toLowerCase().replace(/\s+/g, '');
 
-          const brandLogo = a.brand.toLowerCase().replace(/\s+/g, '');
+              var expires = "";
+              if (a.expires) expires = secondsToDhms(a.expires-date).split(',')[0] + " left";
 
-          // possibly need to check here for specific category types to make ads look different depending on what they are
+              // possibly need to check here for specific category types to make ads look different depending on what they are
 
-          $("#category").append(`<div class="card grow sale"><a class="text-dark" href="${a.link}" target="_blank"><div class="card-img-top"><img class="wide" src="${a.picture}" alt="${a.brand}"></div><div class="card-body"><p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p></div><img class="brand-logo" src="assets/affiliates/${brandLogo}.svg"></a></div>`);
+              var ratio = 'wide';
+              if (a.ratio) ratio = a.ratio; // temporarary solution will probably want to check if height > width while appending it
 
-        });
+              $("#category").append(`<div class="card grow sale animate__animated animate__fadeIn"><a class="text-dark" href="${a.link}" target="_blank"><div class="card-img-top"><img class="${ratio}" src="${a.picture}" alt="${a.brand}"></div><div class="card-body"><p class="card-text">${a.description}</p></div><img class="brand-logo" src="assets/affiliates/${brandLogo}.svg"><p class="label savings bg-danger text-white">${a.sale}</p><p class="label price bg-white"><span class="regular">${a.regular}</span>${a.current}</p><p class="label expire bg-white">${expires}</p></a></div>`);
+
+              //$("#category").append(`<div class="card grow sale"><a class="text-dark" href="${a.link}" target="_blank"><div class="card-img-top">${img.outerHTML}</div><div class="card-body"><p class="card-text">${a.description}</p></div><img class="brand-logo" src="assets/affiliates/${brandLogo}.svg"></a></div>`);
+              //$("#category").append(`<div class="card grow sale"><a class="text-dark" href="${a.link}" target="_blank"><div class="card-img-top"><img class="wide" src="${a.picture}" alt="${a.brand}"></div><div class="card-body"><p class="card-text">${a.description}</p></div><img class="brand-logo" src="assets/affiliates/${brandLogo}.svg"></a></div>`);
+            }
+          });
+
+        } else {
+          $("#category").append(`<p class="no-sales">There are currently no ${key} sales.</p>`);
+        }
 
       } else {
         $("#categories select").append(`<option value="${key}">${key}</option>`);
@@ -84,13 +105,24 @@ $(document).ready(function() {
     if (cookies) Cookies.set('category', category, { expires: 30 }); // set category cookie
     $("#categories h3").html(category + " Deals");
     $("#category").empty(); // empty div
-    categories[category].forEach(function(a) {  // fill div with new category's items
-      const brandLogo = a.brand.toLowerCase().replace(/\s+/g, '');
+    if (categories[category].length) {
+      categories[category].forEach(function(a) {  // fill div with new category's items
+        if(a.expires == "" || a.expires>date){    // check if sale is expired
+          console.log(date);
+          console.log(a.expires);
+          const brandLogo = a.brand.toLowerCase().replace(/\s+/g, '');
 
-      // possibly need to check here for specific category types to make ads look different depending on what they are
+          // possibly need to check here for specific category types to make ads look different depending on what they are
 
-      $("#category").append(`<div class="card grow sale"><a class="text-dark" href="${a.link}" target="_blank"><div class="card-img-top"><img class="wide" src="${a.picture}" alt="${a.brand}"></div><div class="card-body"><p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p></div><img class="brand-logo" src="assets/affiliates/${brandLogo}.svg"></a></div>`);
-    });
+          var ratio = 'wide';
+          if (a.ratio) ratio = a.ratio; // temporarary solution will probably want to check if height > width while appending it
+
+          $("#category").append(`<div class="card grow sale animate__animated animate__fadeIn"><a class="text-dark" href="${a.link}" target="_blank"><div class="card-img-top"><img class="${ratio}" src="${a.picture}" alt="${a.brand}"></div><div class="card-body"><p class="card-text">${a.description}</p></div><img class="brand-logo" src="assets/affiliates/${brandLogo}.svg"><p class="label savings bg-danger text-white">${a.sale}</p><p class="label price bg-white"><span class="regular">${a.regular}</span>${a.current}</p><p class="label expire bg-white">${a.expires}</p></a></div>`);
+        }
+      });
+    } else {
+     $("#category").append(`<p class="no-sales">There are currently no ${category} sales.</p>`);
+   }
   });
 
   $(document).on('click', '.change-category', function(){
@@ -99,13 +131,22 @@ $(document).ready(function() {
     $("#categories select").val(category);  // change category in the selection
     $("#categories h3").html(category + " Deals");
     $("#category").empty(); // empty div
-    categories[category].forEach(function(a) {  // fill div with new category's items
-      const brandLogo = a.brand.toLowerCase().replace(/\s+/g, '');
+    if (categories[category].length) {
+      categories[category].forEach(function(a) {  // fill div with new category's items
+        if(a.expires == "" || a.expires>date){    // check if sale is expired
+          const brandLogo = a.brand.toLowerCase().replace(/\s+/g, '');
 
-      // possibly need to check here for specific category types to make ads look different depending on what they are
+          // possibly need to check here for specific category types to make ads look different depending on what they are
 
-      $("#category").append(`<div class="card grow sale"><a class="text-dark" href="${a.link}" target="_blank"><div class="card-img-top"><img class="wide" src="${a.picture}" alt="${a.brand}"></div><div class="card-body"><p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p></div><img class="brand-logo" src="assets/affiliates/${brandLogo}.svg"></a></div>`);
-    });
+          var ratio = 'wide';
+          if (a.ratio) ratio = a.ratio; // temporarary solution will probably want to check if height > width while appending it
+
+          $("#category").append(`<div class="card grow sale animate__animated animate__fadeIn"><a class="text-dark" href="${a.link}" target="_blank"><div class="card-img-top"><img class="${ratio}" src="${a.picture}" alt="${a.brand}"></div><div class="card-body"><p class="card-text">${a.description}</p></div><img class="brand-logo" src="assets/affiliates/${brandLogo}.svg"><p class="label savings bg-danger text-white">${a.sale}</p><p class="label price bg-white"><span class="regular">${a.regular}</span>${a.current}</p><p class="label expire bg-white">${a.expires}</p></a></div>`);
+        }
+      });
+    } else {
+     $("#category").append(`<p class="no-sales">There are currently no ${category} sales.</p>`);
+   }
   });
 
 
@@ -219,6 +260,21 @@ $(document).ready(function() {
         });
 
 });
+
+
+function secondsToDhms(seconds) {
+  seconds = Number(seconds);
+  var d = Math.floor(seconds / (3600*24));
+  var h = Math.floor(seconds % (3600*24) / 3600);
+  var m = Math.floor(seconds % 3600 / 60);
+  var s = Math.floor(seconds % 60);
+
+  var dDisplay = d > 0 ? d + (d == 1 ? " day, " : " days, ") : "";
+  var hDisplay = h > 0 ? h + (h == 1 ? " hour, " : " hours, ") : "";
+  var mDisplay = m > 0 ? m + (m == 1 ? " minute, " : " minutes, ") : "";
+  var sDisplay = s > 0 ? s + (s == 1 ? " second" : " seconds") : "";
+  return dDisplay + hDisplay + mDisplay + sDisplay;
+}
 
 
 /* prevent hash anchor tag jumping */
