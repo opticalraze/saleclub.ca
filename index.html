@@ -6,6 +6,16 @@
     <meta name="description" content="You work hard for your money. Saving it shouldn't be. Find the best deals in Canada today at SaleClub.ca — Tech Deals, Sports Deals, Food, Apparel and more."><!-- exactly 159 characters, including spaces -->
     <title>SaleClub.ca</title>
 
+    <!-- MOBILE SITE -->
+    <link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.saleclub.ca/">
+    <script type="text/javascript">
+    // check if user is on a mobile device
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+      // true for mobile device
+      window.location.replace("https://m.saleclub.ca"); // redirect user to mobile site
+    }
+    </script>
+
     <!-- ICONS -->
     <!-- third-generation iPad with high-resolution Retina display: -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/favicons/favicon144.png">
