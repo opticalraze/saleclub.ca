@@ -1,14 +1,5 @@
 $(document).ready(function() {
 
-  // make splash picture adjust for mobile devices
-  var windowWidth = $(window).width();
-  var windowHeight = $(window).height();
-  if (windowWidth < windowHeight) {
-    $('#splash').css("height", "");
-    $('#splash').css("width", "100vw");
-  }
-
-
   const splash = document.querySelector('#splash');
   splash.addEventListener('animationend', () => {
     // do something
