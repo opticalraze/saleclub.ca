@@ -170,15 +170,6 @@
 
 
 
-img.wide {
-  width: 100%;
-  height: auto;
-}
-
-img.tall {
-  height: 100%;
-  width: auto;
-}
 
 .grow {
   transition: all .2s ease-in-out;
@@ -199,17 +190,14 @@ img.tall {
 }
 
 .card.sale .card-img-top {
-  width:286px;
-  height:286px;
-  display:flex;
-  justify-content:center;
-  border-bottom: 1px solid rgba(0,0,0,.125); /* might not use this */
+  padding: 10px;
 }
-
-.card.sale .card-img-top img {
-  padding:10px;
-  margin:auto;
-  display:block;
+.card.sale .card-img-top .img {
+  width: 100%;
+  padding-top: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .card.sale .card-body {

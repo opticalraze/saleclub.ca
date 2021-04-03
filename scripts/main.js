@@ -72,13 +72,7 @@ $(document).ready(function() {
 
               // possibly need to check here for specific category types to make ads look different depending on what they are
 
-              var ratio = 'wide';
-              if (a.ratio) ratio = a.ratio; // temporarary solution will probably want to check if height > width while appending it
-
-              $("#category").append(`<div class="card grow sale animate__animated animate__fadeIn"><a class="text-dark" href="${a.link}" target="_blank"><div class="card-img-top"><img class="${ratio}" src="${a.picture}" alt="${a.brand}"></div><div class="card-body"><p class="card-text">${a.description}</p></div><img class="brand-logo" src="assets/affiliates/${brandLogo}.svg"><p class="label savings bg-danger text-white">${a.sale}</p><p class="label price bg-white"><span class="regular">${a.regular}</span>${a.current}</p><p class="label expire bg-white">${expires}</p></a></div>`);
-
-              //$("#category").append(`<div class="card grow sale"><a class="text-dark" href="${a.link}" target="_blank"><div class="card-img-top">${img.outerHTML}</div><div class="card-body"><p class="card-text">${a.description}</p></div><img class="brand-logo" src="assets/affiliates/${brandLogo}.svg"></a></div>`);
-              //$("#category").append(`<div class="card grow sale"><a class="text-dark" href="${a.link}" target="_blank"><div class="card-img-top"><img class="wide" src="${a.picture}" alt="${a.brand}"></div><div class="card-body"><p class="card-text">${a.description}</p></div><img class="brand-logo" src="assets/affiliates/${brandLogo}.svg"></a></div>`);
+              $("#category").append(`<div class="card grow sale animate__animated animate__fadeIn"><a class="text-dark" href="${a.link}" target="_blank"><div class="card-img-top"><div class="img" style="background-image:url('${a.picture}')"></div></div><div class="card-body"><p class="card-text">${a.description}</p></div><img class="brand-logo" src="assets/affiliates/${brandLogo}.svg"><p class="label savings bg-danger text-white">${a.sale}</p><p class="label price bg-white"><span class="regular">${a.regular}</span>${a.current}</p><p class="label expire bg-white">${expires}</p></a></div>`);
             }
           });
 
@@ -115,10 +109,7 @@ $(document).ready(function() {
 
           // possibly need to check here for specific category types to make ads look different depending on what they are
 
-          var ratio = 'wide';
-          if (a.ratio) ratio = a.ratio; // temporarary solution will probably want to check if height > width while appending it
-
-          $("#category").append(`<div class="card grow sale animate__animated animate__fadeIn"><a class="text-dark" href="${a.link}" target="_blank"><div class="card-img-top"><img class="${ratio}" src="${a.picture}" alt="${a.brand}"></div><div class="card-body"><p class="card-text">${a.description}</p></div><img class="brand-logo" src="assets/affiliates/${brandLogo}.svg"><p class="label savings bg-danger text-white">${a.sale}</p><p class="label price bg-white"><span class="regular">${a.regular}</span>${a.current}</p><p class="label expire bg-white">${a.expires}</p></a></div>`);
+          $("#category").append(`<div class="card grow sale animate__animated animate__fadeIn"><a class="text-dark" href="${a.link}" target="_blank"><div class="card-img-top"><div class="img" style="background-image:url('${a.picture}')"></div></div><div class="card-body"><p class="card-text">${a.description}</p></div><img class="brand-logo" src="assets/affiliates/${brandLogo}.svg"><p class="label savings bg-danger text-white">${a.sale}</p><p class="label price bg-white"><span class="regular">${a.regular}</span>${a.current}</p><p class="label expire bg-white">${a.expires}</p></a></div>`);
         }
       });
     } else {
@@ -139,10 +130,7 @@ $(document).ready(function() {
 
           // possibly need to check here for specific category types to make ads look different depending on what they are
 
-          var ratio = 'wide';
-          if (a.ratio) ratio = a.ratio; // temporarary solution will probably want to check if height > width while appending it
-
-          $("#category").append(`<div class="card grow sale animate__animated animate__fadeIn"><a class="text-dark" href="${a.link}" target="_blank"><div class="card-img-top"><img class="${ratio}" src="${a.picture}" alt="${a.brand}"></div><div class="card-body"><p class="card-text">${a.description}</p></div><img class="brand-logo" src="assets/affiliates/${brandLogo}.svg"><p class="label savings bg-danger text-white">${a.sale}</p><p class="label price bg-white"><span class="regular">${a.regular}</span>${a.current}</p><p class="label expire bg-white">${a.expires}</p></a></div>`);
+          $("#category").append(`<div class="card grow sale animate__animated animate__fadeIn"><a class="text-dark" href="${a.link}" target="_blank"><div class="card-img-top"><div class="img" style="background-image:url('${a.picture}')"></div></div><div class="card-body"><p class="card-text">${a.description}</p></div><img class="brand-logo" src="assets/affiliates/${brandLogo}.svg"><p class="label savings bg-danger text-white">${a.sale}</p><p class="label price bg-white"><span class="regular">${a.regular}</span>${a.current}</p><p class="label expire bg-white">${a.expires}</p></a></div>`);
         }
       });
     } else {
