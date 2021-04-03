@@ -10,8 +10,9 @@ $(document).ready(function() {
   var arrayRow;
   var categories;
   var category = Cookies.get('category');
-  var cookies = Cookies.get('cookies');
-  if (cookies == 'no') cookies = false;
+  //var cookies = Cookies.get('cookies');
+  //if (cookies == 'no') cookies = false;
+  const cookies = true; // yay! '.ca' websites don't need cookies lol
 
 
 //console.log(date + 4*3600);
