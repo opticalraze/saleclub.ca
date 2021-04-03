@@ -4,91 +4,89 @@
        "brand":"Diamond CBD",
        "link":"https://www.diamondcbd.com/",
        "picture":"https://static.shareasale.com/image/94813/Banner---Delta-8-Vape-Tank-and-Pens.jpg",
+       "mobile":"https://static.shareasale.com/image/94813/WhatsAppImage2021-01-06at1.jpeg",
        "pixel":""
     },
     {
        "brand":"Diamond CBD",
        "link":"https://www.diamondcbd.com/",
        "picture":"https://static.shareasale.com/image/94813/Banner---liquid-gold-vape-liquid.jpg",
+       "mobile":"https://static.shareasale.com/image/94813/636x636-Banner-StPatricks.jpg",
        "pixel":""
     },
     {
        "brand":"Diamond CBD",
        "link":"https://www.diamondcbd.com/",
        "picture":"https://static.shareasale.com/image/94813/Banner---YY-Plus--FS-relax-squares.jpg",
-       "pixel":""
-    }
-  ],
-  "tech":[
-    {
-       "brand":"Staples",
-       "link":"https://amazon.ca",
-       "picture":"https://images-na.ssl-images-amazon.com/images/I/514bNGOGLYL._AC_SL1001_.jpg",
-       "pixel":""
-    },
-    {
-       "brand":"SportCheck",
-       "link":"https://amazon.ca",
-       "picture":"https://images-na.ssl-images-amazon.com/images/I/61Bboa37QUL._AC_SL1024_.jpg",
-       "pixel":""
-    },
-    {
-       "brand":"BestBuy",
-       "link":"https://amazon.ca",
-       "picture":"https://images-na.ssl-images-amazon.com/images/I/51is6bX7nFL._AC_SL1000_.jpg",
-       "pixel":""
-    },
-    {
-       "brand":"Amazon",
-       "link":"https://amazon.ca",
-       "picture":"https://images-na.ssl-images-amazon.com/images/I/616jD4KT5tL._AC_SL1500_.jpg",
-       "pixel":""
-    },
-    {
-       "brand":"TheSource",
-       "link":"https://amazon.ca",
-       "picture":"https://images-na.ssl-images-amazon.com/images/I/51is6bX7nFL._AC_SL1000_.jpg",
+       "mobile":"https://static.shareasale.com/image/94813/636x636-Banner-April-Fools.jpg",
        "pixel":""
     }
   ],
   "categories":{
     "tech":[
       {
-         "brand":"Staples",
-         "link":"https://amazon.ca",
-         "picture":"https://images-na.ssl-images-amazon.com/images/I/514bNGOGLYL._AC_SL1001_.jpg",
+         "brand":"Amazon",
+         "link":"https://www.amazon.ca/fire-tv-cube/dp/B07M5M7W4K/ref=gbps_img_s-6_5aeb_a3c0299f?smid=A3DWYIK6Y9EEQB&pf_rd_p=8a6cc1e9-9881-4806-9377-6cf39b8f5aeb&pf_rd_s=slot-6&pf_rd_t=701&pf_rd_i=gb_main&pf_rd_m=A3DWYIK6Y9EEQB&pf_rd_r=ZENWN9WW74GDK4GM81M3",
+         "picture":"https://images-na.ssl-images-amazon.com/images/I/617ZmDu4AKL._AC_SL1000_.jpg",
+         "description":"From across the room, just ask Alexa to turn on the TV, dim the lights, and play your show.",
+         "sale":"20% off",
+         "regular":"$149.99",
+         "current":"$119.99",
+         "savings":"$30.00",
+         "expires":"",
+         "ratio":"",
          "pixel":""
       },
       {
-         "brand":"SportCheck",
-         "link":"https://amazon.ca",
-         "picture":"https://images-na.ssl-images-amazon.com/images/I/61Bboa37QUL._AC_SL1024_.jpg",
+         "brand":"TheSource",
+         "link":"https://www.thesource.ca/en-ca/brands/headrush/headrush-hrf-801-2-4ghz-over-ear-wireless-headphones---black/p/108081706",
+         "picture":"https://www.thesource.ca/medias/20190715111212-108081706-A.jpg-mediaConversion-640-x-480-mediaConversion-400-x-300-0?context=bWFzdGVyfGltYWdlc3w0MTU3MnxpbWFnZS9qcGVnfGltYWdlcy9oYTEvaDg0LzkxNzAyNTk5MzUyNjIuanBnfDFhMmI1YjcwMzJjNmQxNTQyNDA5ZDNiNDVhYjI1NWM1YjEwNDQwMjFlYjU2ZTM3ZTVjMzRhNTMwOWM5ZjAxZDQ",
+         "description":"<b>HeadRush HRF 801 2.4GHz <br>Over-Ear Wireless Headphones</b><br><i>Battery life: 12 hours</i>",
+         "sale":"Save $30.00",
+         "regular":"$99.99",
+         "current":"$69.99",
+         "savings":"$30.00",
+         "expires":"1617247748",
+         "ratio":"",
+         "pixel":""
+      },
+      {
+         "brand":"TheSource",
+         "link":"https://www.thesource.ca/en-ca/audio-headphones/portable-audio/all-bluetooth-speakers/headrush-hrsp-5022-burst-bluetooth%c2%ae-boombox-with-fm-radio---black/p/108080303",
+         "picture":"https://www.thesource.ca/medias/20200124115218-108080303-A.jpg-mediaConversion-640-x-480-mediaConversion-400-x-300-0?context=bWFzdGVyfGltYWdlc3w0OTY0NnxpbWFnZS9qcGVnfGltYWdlcy9oZDQvaGFkLzkyMjQyNDQwMDI4NDYuanBnfDA5Mjk5MTA4OTBhOGMyN2RmZGRjZWE2NmVmMDkyNDQ4Yzc1MjU1MWNlMWNmYjFjNzk0OWUwNzBkMmRiMDc2NmI",
+         "description":"<b>HeadRush HRSP 5022 Burst Bluetooth® Boombox</b><br><i>With FM Radio and powerbank</i>",
+         "sale":"40% off",
+         "regular":"$129.99",
+         "current":"$74.99",
+         "savings":"$55.00",
+         "expires":"1617247748",
+         "ratio":"",
+         "pixel":""
+      },
+      {
+         "brand":"Staples",
+         "link":"https://www.staples.ca/products/887581-en-logitech-marathon-m705-wireless-mouse-black",
+         "picture":"https://cdn.shopify.com/s/files/1/0036/4806/1509/products/37b25f48a7347be37b4d958e3b39a6b522c78871_square887581_1_1000x1000.jpg?v=1601841016",
+         "description":"<b>Logitech Marathon M705 Wireless Mouse</b><br><i>Three-year battery life</i>",
+         "sale":"Save $30.00",
+         "regular":"$69.99",
+         "current":"$39.99",
+         "savings":"$55.00",
+         "expires":"1617249509",
+         "ratio":"tall",
          "pixel":""
       },
       {
          "brand":"BestBuy",
-         "link":"https://amazon.ca",
-         "picture":"https://images-na.ssl-images-amazon.com/images/I/51is6bX7nFL._AC_SL1000_.jpg",
-         "pixel":""
-      }
-    ],
-    "dog":[
-      {
-         "brand":"Staples",
-         "link":"https://amazon.ca",
-         "picture":"https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-1100x628.jpg",
-         "pixel":""
-      },
-      {
-         "brand":"SportCheck",
-         "link":"https://amazon.ca",
-         "picture":"https://i.guim.co.uk/img/media/684c9d087dab923db1ce4057903f03293b07deac/205_132_1915_1150/master/1915.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=14a95b5026c1567b823629ba35c40aa0",
-         "pixel":""
-      },
-      {
-         "brand":"BestBuy",
-         "link":"https://amazon.ca",
-         "picture":"https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-1100x628.jpg",
+         "link":"https://www.bestbuy.ca/en-ca/product/samsung-galaxy-s20-fe-5g-128gb-cloud-lavender-unlocked/14950993",
+         "picture":"https://multimedia.bbycastatic.ca/multimedia/products/500x500/149/14950/14950993.jpg",
+         "description":"<b>Samsung Galaxy S20 FE 5G 128GB - Unlocked</b><br><i>Take stunning photos</i>",
+         "sale":"Save $65",
+         "regular":"",
+         "current":"$764.99",
+         "savings":"",
+         "expires":"",
+         "ratio":"",
          "pixel":""
       }
     ],
@@ -97,58 +95,134 @@
          "brand":"Staples",
          "link":"https://amazon.ca",
          "picture":"https://images-na.ssl-images-amazon.com/images/I/514bNGOGLYL._AC_SL1001_.jpg",
+         "description":"Some quick example text to build on the card title and make up the bulk of the card's content.",
+         "sale":"",
+         "regular":"",
+         "current":"",
+         "savings":"",
+         "expires":"",
+         "ratio":"",
          "pixel":""
       },
       {
          "brand":"SportCheck",
          "link":"https://amazon.ca",
          "picture":"https://images-na.ssl-images-amazon.com/images/I/61Bboa37QUL._AC_SL1024_.jpg",
+         "description":"Some quick example text to build on the card title and make up the bulk of the card's content.",
+         "sale":"",
+         "regular":"",
+         "current":"",
+         "savings":"",
+         "expires":"",
+         "ratio":"tall",
          "pixel":""
       },
       {
          "brand":"BestBuy",
          "link":"https://amazon.ca",
          "picture":"https://images-na.ssl-images-amazon.com/images/I/51is6bX7nFL._AC_SL1000_.jpg",
+         "description":"Some quick example text to build on the card title and make up the bulk of the card's content.",
+         "sale":"",
+         "regular":"",
+         "current":"",
+         "savings":"",
+         "expires":"",
+         "ratio":"",
          "pixel":""
       }
     ],
     "sports":[
       {
-         "brand":"Staples",
-         "link":"https://amazon.ca",
-         "picture":"https://images-na.ssl-images-amazon.com/images/I/514bNGOGLYL._AC_SL1001_.jpg",
+         "brand":"Amazon",
+         "link":"https://www.amazon.ca/dp/B07XTPLSPW?ref_=Oct_DLandingS_D_3cae0828_NA",
+         "picture":"https://images-na.ssl-images-amazon.com/images/I/81rBVSDlcEL._AC_SL1500_.jpg",
+         "description":"Some quick example text to build on the card title and make up the bulk of the card's content.",
+         "sale":"20% off",
+         "regular":"$189.99",
+         "current":"$151.99",
+         "savings":"$38.00",
+         "expires":"1617001473",
+         "ratio":"tall",
          "pixel":""
       },
       {
          "brand":"SportCheck",
          "link":"https://amazon.ca",
-         "picture":"https://images-na.ssl-images-amazon.com/images/I/61Bboa37QUL._AC_SL1024_.jpg",
+         "picture":"https://fgl.scene7.com/is/image/FGLSportsLtd/331968558_99_a?bgColor=0,0,0,0&resMode=sharp2&op_sharpen=1&hei=520",
+         "description":"Some quick example text to build on the card title and make up the bulk of the card's content.",
+         "sale":"",
+         "regular":"",
+         "current":"",
+         "savings":"",
+         "expires":"",
+         "ratio":"",
          "pixel":""
       },
       {
-         "brand":"BestBuy",
+         "brand":"SportCheck",
          "link":"https://amazon.ca",
-         "picture":"https://images-na.ssl-images-amazon.com/images/I/51is6bX7nFL._AC_SL1000_.jpg",
+         "picture":"https://images-na.ssl-images-amazon.com/images/I/51csCPXM5OL._AC_SX425_.jpg",
+         "description":"Some quick example text to build on the card title and make up the bulk of the card's content.",
+         "sale":"",
+         "regular":"",
+         "current":"",
+         "savings":"",
+         "expires":"",
+         "ratio":"tall",
+         "pixel":""
+      },
+      {
+         "brand":"Amazon",
+         "link":"https://amazon.ca",
+         "picture":"https://images-na.ssl-images-amazon.com/images/I/81gJQ0cyvEL._AC_SL1500_.jpg",
+         "description":"Some quick example text to build on the card title and make up the bulk of the card's content.",
+         "sale":"",
+         "regular":"",
+         "current":"",
+         "savings":"",
+         "expires":"",
+         "ratio":"",
          "pixel":""
       }
     ],
     "finance":[
       {
-         "brand":"Staples",
+         "brand":"Amazon",
          "link":"https://amazon.ca",
-         "picture":"https://upload.wikimedia.org/wikipedia/commons/2/23/US_one_dollar_bill%2C_obverse%2C_series_2009.jpg",
+         "picture":"https://images-na.ssl-images-amazon.com/images/I/81gJQ0cyvEL._AC_SL1500_.jpg",
+         "description":"Some quick example text to build on the card title and make up the bulk of the card's content.",
+         "sale":"",
+         "regular":"",
+         "current":"",
+         "savings":"",
+         "expires":"",
+         "ratio":"",
          "pixel":""
       },
       {
          "brand":"SportCheck",
          "link":"https://amazon.ca",
          "picture":"https://durhampreciousmetals.com/wp-content/uploads/2016/07/1-kg-Pure-Assorted-Gold-Bar-Front-1.jpg",
+         "description":"Some quick example text to build on the card title and make up the bulk of the card's content.",
+         "sale":"",
+         "regular":"",
+         "current":"",
+         "savings":"",
+         "expires":"",
+         "ratio":"",
          "pixel":""
       },
       {
          "brand":"BestBuy",
          "link":"https://amazon.ca",
          "picture":"https://upload.wikimedia.org/wikipedia/commons/b/b9/CanadianChequeSample.png",
+         "description":"Some quick example text to build on the card title and make up the bulk of the card's content.",
+         "sale":"",
+         "regular":"",
+         "current":"",
+         "savings":"",
+         "expires":"",
+         "ratio":"",
          "pixel":""
       }
     ],
@@ -157,19 +231,58 @@
          "brand":"Staples",
          "link":"https://amazon.ca",
          "picture":"http://cdn.shopify.com/s/files/1/2804/0750/products/Allbirds_WL_RN_SF_PDP_Natural_Grey_BTY_3f0f776a-693e-4eb7-9527-d55ed98e9205_600x600.png?v=1610061674",
+         "description":"Some quick example text to build on the card title and make up the bulk of the card's content.",
+         "sale":"",
+         "regular":"",
+         "current":"",
+         "savings":"",
+         "expires":"",
+         "ratio":"",
          "pixel":""
       },
       {
          "brand":"SportCheck",
          "link":"https://amazon.ca",
          "picture":"https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy/7ed0855435194229a525aad6009a0497_9366/Superstar_Shoes_White_EG4958_01_standard.jpg",
+         "description":"Some quick example text to build on the card title and make up the bulk of the card's content.",
+         "sale":"",
+         "regular":"",
+         "current":"",
+         "savings":"",
+         "expires":"",
+         "ratio":"",
          "pixel":""
       },
       {
          "brand":"BestBuy",
          "link":"https://amazon.ca",
          "picture":"https://www.toms.com/dw/image/v2/BDWV_PRD/on/demandware.static/-/Library-Sites-toms-content-global/default/dwfa1bc923/page-designer/home/promo/sp21/usca/2.22-2.28_MOBILE_ABC_1.jpg",
+         "description":"Some quick example text to build on the card title and make up the bulk of the card's content.",
+         "sale":"",
+         "regular":"",
+         "current":"",
+         "savings":"",
+         "expires":"",
+         "ratio":"",
          "pixel":""
+      }
+    ],
+    "vape":[
+
+    ],
+    "web hosting":[
+      {
+        "brand":"GreenGeeks",
+        "link":"https://greengeeks.ca",
+        "picture":"assets/sales/greengeeks.svg",
+        "description":"Eco-friendly web hosting at a competitive cost. Why not?",
+        "sale":"",
+        "regular":"$10.95",
+        "current":"$2.49",
+        "savings":"",
+        "expires":"",
+        "ratio":"",
+        "pixel":""
       }
     ]
   }
