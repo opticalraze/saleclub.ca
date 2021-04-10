@@ -199,7 +199,26 @@ body {
 
 
 
-
+#about-popup .body{
+  text-align: center;
+}
+#about-popup .about-logo {
+  width: 300px;
+}
+#about-popup .about-slogan {
+  margin-top: 16px;
+  text-align: center;
+  font-style: italic;
+}
+#about-popup .about-contact {
+  margin-top: 60px;
+}
+/*#about-popup .about-contact a {
+  text-decoration: underline;
+}
+#about-popup .about-contact a:hover {
+  text-decoration: none;
+}*/
 
 
 
