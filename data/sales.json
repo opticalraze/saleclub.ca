@@ -285,5 +285,59 @@
         "pixel":""
       }
     ]
+  },
+  "coupons":{
+    "bestbuy":[
+      {
+         "code":"55712",
+         "description":"Save $25 on Your Order Using Staples Coupon",
+         "sale":"20% off",
+         "expires":""
+      },
+      {
+         "code":"55712",
+         "description":"Free Shipping on orders over $20.00",
+         "sale":"free shipping",
+         "expires":""
+      },
+      {
+         "code":"55712",
+         "description":"Save $25 on Your Order Using Staples Coupon",
+         "sale":"20% off",
+         "expires":""
+      },
+      {
+         "code":"55712",
+         "description":"Save $25 on Your Order Using Staples Coupon",
+         "sale":"20% off",
+         "expires":""
+      },
+      {
+         "code":"55712",
+         "description":"Save $25 on Your Order Using Staples Coupon",
+         "sale":"20% off",
+         "expires":""
+      }
+    ],
+    "staples":[
+      {
+         "code":"55712",
+         "description":"Save $25 on Your Order Using Staples Coupon",
+         "sale":"20% off",
+         "expires":""
+      },
+      {
+         "code":"55712",
+         "description":"Save $25 on Your Order Using Staples Coupon",
+         "sale":"20% off",
+         "expires":""
+      },
+      {
+         "code":"55712",
+         "description":"Save $25 on Your Order Using Staples Coupon",
+         "sale":"20% off",
+         "expires":""
+      }
+    ]
   }
 }
