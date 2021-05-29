@@ -3,9 +3,8 @@
   <head>
     <!-- META -->
     <meta charset="utf-8">
+    <title>Find deals with a digital flyer for Canadians! — SaleClub.ca</title>
     <meta name="description" content="You work hard for your money. Saving it shouldn't be. Find the best deals in Canada today at SaleClub.ca — Tech Deals, Sports Deals, Food, Apparel and more."><!-- exactly 159 characters, including spaces -->
-    <title>SaleClub.ca</title>
-
     <!-- MOBILE SITE -->
     <link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.saleclub.ca/">
     <script type="text/javascript">
@@ -198,6 +197,12 @@
 
     <!-- Scripts -->
     <script type="text/javascript" src="scripts/main.js"></script>
+
+    <script type="text/javascript">
+
+      if (Cookies.get('category')) document.title = "SaleClub.ca";
+
+    </script>
 
   </body>
 </html>
